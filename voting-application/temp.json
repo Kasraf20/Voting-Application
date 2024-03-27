@@ -1,0 +1,10 @@
+{  
+  "name": "asraf",
+  "age": 25,
+  "phone": 254163,
+  "aadharNumber": 2145632,
+  "password": 2145,
+  "address": "ishwar nager",
+  "role": "voter",
+  "isVoted": false
+}
