@@ -36,6 +36,9 @@ export default function Candidate() {
               Party Name
             </th>
             <th scope="col" className="px-6 py-3">
+              Alliance
+            </th>
+            <th scope="col" className="px-6 py-3">
               Age
             </th>
             <th scope="col" className="px-6 py-3">
@@ -53,6 +56,7 @@ export default function Candidate() {
                 {(candidate.candidateName).toUpperCase()}
               </th>
               <td className="px-6 py-4">{(candidate.partyName).toUpperCase()}</td>
+              <td className="px-6 py-4">{(candidate.alliance).toUpperCase()}</td>
               <td className="px-6 py-4">{candidate.age}</td>
               <td className="px-6 py-4"><button className="text-white bg-green-400 px-5 py-2 text-lg rounded-full hover:bg-green-700" value={candidate._id} onClick={handleVote}>Vote</button></td>
             </tr>

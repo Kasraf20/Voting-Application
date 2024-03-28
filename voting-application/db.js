@@ -1,9 +1,12 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
+require('dotenv').config()
 
-MONGO_URL = 'mongodb://127.0.0.1:27017/voting'
-// const MONGO_URL = process.env.DB_URL
+//Local DataBase
+// MONGO_URL = 'mongodb://127.0.0.1:27017/voting'
 
-mongoose.connect(MONGO_URL)
+//Cloud Database
+const MONGO_URL = process.env.DB_URL
+mongoose.connect(MONGO_URL);
 
 const db = mongoose.connection;
 

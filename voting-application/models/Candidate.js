@@ -10,6 +10,10 @@ const candidateSchema = new mongoose.Schema({
         type: String,
         required : true
     },
+    alliance: {
+        type:String,
+        required : true
+    },
     age:{
         type : Number,
         required : true

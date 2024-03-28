@@ -15,7 +15,6 @@ export default function VotingCount() {
   }, []);
 
   const handleLiveCount = async () => {
-    // console.log()
     await getVoteCount();
     alert("Got live data successfully.");
   };
