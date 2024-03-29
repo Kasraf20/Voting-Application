@@ -6,7 +6,7 @@ export default function VotingCount() {
   const [vote, setVote] = useState([]);
   const getVoteCount = () => {
     axios
-      .get("http://localhost:8080/candidate/vote/count")
+      .get("https://voting-application-psi.vercel.app/candidate/vote/count")
       .then((res) => setVote(res.data))
       .catch((err) => console.log(err));
   };

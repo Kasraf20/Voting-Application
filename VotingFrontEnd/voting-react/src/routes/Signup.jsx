@@ -28,7 +28,7 @@ export default function Signup() {
 
     const handleSinglePost = () => {
       axios
-        .post("http://localhost:8080/user", data)
+        .post("https://voting-application-psi.vercel.app/user", data)
         .then((result) => {
           const id = result.data.user._id;
           const token = result.data.token;

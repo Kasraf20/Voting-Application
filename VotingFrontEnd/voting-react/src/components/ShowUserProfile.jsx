@@ -62,7 +62,7 @@ export default function ShowUserProfile() {
     const id = localStorage.getItem("voting_id");
     const token = localStorage.getItem('voting_token')
     axios
-      .put(`http://localhost:8080/user/${id}`,values,{
+      .put(`https://voting-application-psi.vercel.app/user/${id}`,values,{
         headers: {"Authorization" : `Bearer ${token}`}
       })
       .then((result) => {

@@ -11,7 +11,7 @@ export default function FetchCandidate() {
   const getUserData = () => {
     if(candidate.fetchDone) return
     axios
-      .get(`http://localhost:8080/candidate`)
+      .get(`https://voting-application-psi.vercel.app/candidate`)
       .then((result) => {
         dispatch(candidateDetailAction.addCandidateDetail(result.data))
         dispatch(candidateDetailAction.checkFetchDone())        

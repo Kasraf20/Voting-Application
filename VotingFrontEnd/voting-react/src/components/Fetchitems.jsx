@@ -14,7 +14,7 @@ const FetchItems = () => {
     if(user.fetchDone && 'name' in userData) return
     const id = localStorage.getItem("voting_id");
     axios
-      .get(`http://localhost:8080/user/${id}`)
+      .get(`https://voting-application-psi.vercel.app/user/${id}`)
       .then((result) => {
         dispatch(userDetailAction.addUserDetail(result.data))
         dispatch(userDetailAction.checkFetchDone())        

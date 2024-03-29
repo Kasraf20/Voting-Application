@@ -10,7 +10,7 @@ export default function Candidate() {
     const token = localStorage.getItem('voting_token')
     if(!token) return alert('Please Signin.')
     axios
-      .post(`http://localhost:8080/candidate/vote/${candidateId}`,candidateId,{
+      .post(`https://voting-application-psi.vercel.app/candidate/vote/${candidateId}`,candidateId,{
         headers: {"Authorization" : `Bearer ${token}`}
       }
       )
